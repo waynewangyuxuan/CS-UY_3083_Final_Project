@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crime Tracker - Criminals</title>
+    <style>
+      /* Basic Reset */
+      body,
+      h1,
+      h2,
+      h3,
+      p,
+      table,
+      td,
+      th,
+      tr,
+      ul,
+      li,
+      a {
+        margin: 0;
+        padding: 0;
+        font-family: "Arial", sans-serif;
+      }
+      /* Navigation */
+      nav {
+        background-color: #333;
+        overflow: hidden;
+      }
+      nav ul {
+        width: 80%;
+        margin: 0 auto;
+        list-style-type: none;
+      }
+      nav li {
+        float: left;
+      }
+      nav a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+
+        text-decoration: none;
+      }
+      nav a:hover,
+      nav a.active {
+        background-color: #111;
+      }
+      /* Main Content */
+      main {
+        width: 80%;
+        margin: 20px auto;
+        background-color: #f4f4f4;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+      }
+      .search-container {
+        margin-bottom: 20px;
+      }
+      input[type="text"],
+      button {
+        padding: 10px;
+        margin-right: 10px;
+        border: none;
+        border-radius: 3px;
+      }
+      input[type="text"] {
+        width: 80%;
+      }
+      button {
+        background-color: #333;
+        color: #fff;
+        cursor: pointer;
+      }
+      button:hover {
+        background-color: #555;
+      }
+      table {
+        width: 100%;
+
+        border-collapse: collapse;
+      }
+      th,
+      td {
+        border-bottom: 1px solid #ddd;
+        padding: 8px 12px;
+        text-align: left;
+      }
+      th {
+        background-color: #333;
+        color: #fff;
+      }
+      tr:hover {
+        background-color: #f5f5f5;
+      }
+      .button-container {
+        margin-top: 20px;
+        text-align: right;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navigation Menu -->
+    <nav>
+      <ul>
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="alias.html">Alias</a>
+        </li>
+        <li>
+          <a href="criminals.html">Criminals</a>
+        </li>
+        <li>
+          <a href="crimes.html">Crimes</a>
+        </li>
+        <li>
+          <a href="sentences.html">Sentences</a>
+        </li>
+        <li>
+          <a href="prob_officer.html">Prob officers</a>
+        </li>
+        <li>
+          <a href="crime_charges.html" class="active">Crime charges</a>
+        </li>
+        <li>
+          <a href="crime_officers.html">Crime officers</a>
+        </li>
+        <li>
+          <a href="officers.html">Officers</a>
+        </li>
+        <li>
+          <a href="appeals.html">Appeals</a>
+        </li>
+        <li>
+          <a href="crime_codes.html">Crime codes</a>
+        </li>
+      </ul>
+    </nav>
+    <!-- Main Content for Criminals Page -->
+    <main>
+      <h1>Crime Charges</h1>
+      <!-- Search Bar -->
+      <div class="search-container">
+        <input type="text" placeholder="Search for a crime charge..." />
+        <button>Search</button>
+      </div>
+      <!-- Criminals List -->
+      <table>
+        <thead>
+          <tr>
+            <th>Charge ID</th>
+            <th>Crime ID</th>
+            <th>Crime code</th>
+            <th>Charge status</th>
+            <th>Fine amount</th>
+            <th>Court fee</th>
+            <th>Amount paid</th>
+            <th>Pay due date</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Sample Data -->
+          <tr>
+            <td>1234567890</td>
+            <td>123456123</td>
+            <td>123</td>
+
+            <td>PD</td>
+            <td>20000</td>
+            <td>3000</td>
+            <td>3000</td>
+            <td>2023-12-25</td>
+          </tr>
+        </tbody>
+      </table>
+      <!-- Buttons -->
+      <div class="button-container">
+        <button>Add New Crime Charge</button>
+        <button>Edit Selected Crime Charge</button>
+        <button>Delete Selected Crime Charge</button>
+      </div>
+    </main>
+  </body>
+</html>
