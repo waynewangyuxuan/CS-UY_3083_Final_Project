@@ -10,14 +10,22 @@ $lastname = $_POST['lname'];
 $username = $_POST['uname'];
 $password = $_POST['pwd'];
 
+$hashed_password = password_hash($password, PASSWORD_DEFAULT);
 
-// database connection
-$sql = "INSERT into users(firstname, lastname, username, password) values('$firstname','$lastname','$username','$password')";
+echo $hashed_password;
+
+
+$sql = "INSERT into users(firstname, lastname, username, password) values('$firstname','$lastname','$username','$hashed_password')";
+
+
 $result = mysqli_query($conn, $sql);
 if($result){
 	echo $firstname. " is registred succesfully!";
 }
+header("Location: index.html");
+exit; 
 
-	$conn->close();
+$conn->close();
+
 
 ?>
