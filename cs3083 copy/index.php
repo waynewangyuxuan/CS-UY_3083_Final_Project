@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crime Tracker - Dashboard</title>
+    <style>
+      /* Basic Reset */
+      body,
+      h1,
+      h2,
+      h3,
+      p,
+      table,
+      td,
+      th,
+      tr,
+      ul,
+      li,
+      a {
+        margin: 0;
+        padding: 0;
+        font-family: "Arial", sans-serif;
+      }
+      /* Navigation */
+      nav {
+        background-color: #333;
+        overflow: hidden;
+      }
+      nav ul {
+        width: 80%;
+        margin: 0 auto;
+        list-style-type: none;
+      }
+      nav li {
+        float: left;
+      }
+      nav a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+      nav a:hover,
+      nav a.active {
+        background-color: #111;
+      }
+      /* Main Content */
+      main {
+        width: 80%;
+        margin: 40px auto;
+        background-color: #f4f4f4;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+      }
+      .dashboard-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+      }
+      .dashboard-item {
+        padding: 20px;
+        background-color: #333333;
+        color: #fff;
+        border-radius: 5px;
+        text-align: center;
+        cursor: pointer;
+      }
+      .dashboard-item:hover {
+        background-color: #555;
+      }
+      h2 {
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body>
+<!-- Navigation Menu -->
+<nav>
+  <ul>
+    <li>
+      <a href="index.php" class="active">Home</a>
+    </li>
+    <li>
+      <a href="alias.php">Alias</a>
+    </li>
+    <li>
+      <a href="criminals.php">Criminals</a>
+    </li>
+    <li>
+      <a href="crimes.php">Crimes</a>
+    </li>
+    <li>
+      <a href="sentences.php">Sentences</a>
+    </li>
+    <li>
+      <a href="prob_officers.php">Prob officers</a>
+    </li>
+    <li>
+      <a href="crime_charges.php">Crime charges</a>
+    </li>
+    <li>
+      <a href="crime_officers.php">Crime officers</a>
+    </li>
+    <li>
+      <a href="officers.php">Officers</a>
+    </li>
+    <li>
+      <a href="appeals.php">Appeals</a>
+    </li>
+    <li>
+      <a href="crime_codes.php" >Crime codes</a>
+    </li>
+  </ul>
+</nav>
+
+    <!-- Main Dashboard Content -->
+    <main>
+      <h1>Welcome to Crime Tracker.</h1>
+      <br />
+      <h2>
+        Search up criminals, crimes, sentences, appeals, police officers, and
+        all crime related data.
+      </h2>
+      <h2>Click on the navigation bar panels to access data.</h2>
+    </main>
+    <main>
+      <h1>New to the website?</h1>
+      <br />
+      <h2>Create an account on the Login page</h2>
+      <h2>NOTE: Only registered and verified users can alter the database.</h2>
+    </main>
+  </body>
+</html>

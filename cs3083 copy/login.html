@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crime Tracker - Criminals</title>
+    <style>
+      /* Basic Reset */
+      body,
+      h1,
+      h2,
+      h3,
+      p,
+      table,
+      td,
+      th,
+      tr,
+      ul,
+      li,
+      a {
+        margin: 0;
+        padding: 0;
+        font-family: "Arial", sans-serif;
+      }
+      /* Navigation */
+      nav {
+        background-color: #333;
+        overflow: hidden;
+      }
+      nav ul {
+        width: 80%;
+        margin: 0 auto;
+        list-style-type: none;
+      }
+      nav li {
+        float: left;
+      }
+      nav a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+      nav a:hover,
+      nav a.active {
+        background-color: #111;
+      }
+      /* Main Content */
+      main {
+        width: 80%;
+        margin: 20px auto;
+        background-color: #f4f4f4;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      .search-container {
+        margin-bottom: 20px;
+      }
+      input[type="text"],
+      button {
+        padding: 10px;
+        margin-right: 10px;
+        border: none;
+        border-radius: 3px;
+      }
+      input[type="text"] {
+        width: 80%;
+      }
+      button {
+        background-color: #333;
+        color: #fff;
+        cursor: pointer;
+      }
+      button:hover {
+        background-color: #555;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+      th,
+      td {
+        border-bottom: 1px solid #ddd;
+        padding: 8px 12px;
+        text-align: left;
+      }
+      th {
+        background-color: #333;
+        color: #fff;
+      }
+      tr:hover {
+        background-color: #f5f5f5;
+      }
+      .button-container {
+        margin-top: 20px;
+
+        text-align: right;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navigation Menu -->
+    <nav>
+      <ul>
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="alias.html">Alias</a>
+        </li>
+        <li>
+          <a href="criminals.html" class="active">Criminals</a>
+        </li>
+        <li>
+          <a href="crimes.html">Crimes</a>
+        </li>
+        <li>
+          <a href="sentences.html">Sentences</a>
+        </li>
+        <li>
+          <a href="prob_officer.html">Prob officers</a>
+        </li>
+        <li>
+          <a href="crime_charges.html">Crime charges</a>
+        </li>
+        <li>
+          <a href="crime_officers.html">Crime officers</a>
+        </li>
+        <li>
+          <a href="officers.html">Officers</a>
+        </li>
+        <li>
+          <a href="appeals.html">Appeals</a>
+        </li>
+        <li>
+          <a href="crime_codes.html">Crime codes</a>
+        </li>
+      </ul>
+    </nav>
+    <!-- Main Content for Criminals Page -->
+    <!-- Main Content for Criminals Page -->
+    <main style="display: flex; flex-direction: column">
+      <h1 style="margin-bottom: 20px">Login or Register</h1>
+      <div class="login-container">
+        <h2>Login</h2>
+        <form action="login.php" method="post">
+          <label for="username">Username:</label>
+          <input
+            type="text"
+            id="username"
+            name="username"
+            required
+          /><br /><br />
+
+          <label for="password">Password:</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            required
+          /><br /><br />
+
+          <button type="submit">Login</button>
+        </form>
+      </div>
+
+      <div class="register-container" style="margin-top: 10px">
+        <h2>Register</h2>
+        <form action="register.php" method="post">
+          <label for="new-username">New Username:</label>
+          <input
+            type="text"
+            id="new-username"
+            name="new-username"
+            required
+          /><br /><br />
+
+          <label for="new-password">New Password:</label>
+          <input
+            type="password"
+            id="new-password"
+            name="new-password"
+            required
+          /><br /><br />
+
+          <button type="submit">Register</button>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>
